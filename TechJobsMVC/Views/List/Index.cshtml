@@ -11,7 +11,13 @@
         }
     </tr>
     <tr>
-        <td><a asp-controller="List" asp-action="Jobs" asp-route-column="@ViewBag.columns["all"]" asp-route-value="@ViewBag.columns["all"]">All</a></td> @* Feel free to remove or modify this element if necessary. *@
+        <td>
+            <ul>
+                <li>
+                    <a asp-controller="List" asp-action="Jobs" asp-route-column="@ViewBag.columns["all"]" asp-route-value="@ViewBag.columns["all"]">All</a>
+                </li>
+            </ul>
+        </td> @* Feel free to remove or modify this element if necessary. *@
         @foreach (var category in ViewBag.tableChoices)
         {
             <td>

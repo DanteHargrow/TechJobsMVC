@@ -1,18 +1,12 @@
 ﻿<div class="container body-content">
 
-    <h1>@ViewBag.Title</h1>
+    <h1 style="text-align: center">@ViewBag.Title</h1>
     <table class="job-listing">
-            @foreach (var job in ViewBag.jobs)
-            {
-                <tr>
-                    <th>ID:@job.Id</th>
-                    <th>ID:@job.Id</th>
-                    <th>Name: @job.Name</th>
-                    <th>Emthloyer: @job.Employer</th>
-                    <th>Location: @job.Location</th>
-                    <th>thosition Tythe: @job.PositionType</th>
-                    <th>Skill: @job.CoreCompetency</th>
-                </tr>
-            }
+        @foreach (var job in ViewBag.jobs)
+        {
+            <tr>
+                <th><p style="text-align: left">ID:@job.Id<br />Name: @job.Name<br />Employer: @job.Employer<br />Location: @job.Location<br />Position Type: @job.PositionType<br />Skill: @job.CoreCompetency</p></th>
+            </tr>
+        }
     </table>
 </div>
